@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denuncia</title>
+
+    <!--==== ICONOS ====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!--==== GLOBAL CSS ====-->
+    <link rel="stylesheet" href="css/modal && forms/scrollBar.css" />
+    <link rel="stylesheet" href="css/modal && forms/modo_night.css">
+
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/global.css"
+      media="screen and (max-width: 479px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/movil.css"
+      media="screen and (min-width: 480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/desktop.css"
+      media="screen and (min-width: 1024px)"
+    />
+
+    <!-- === SETTINGS === -->
+    <link rel="stylesheet" href="css/modal && forms/style-modal.css" />
+  </head>
+  <body>
+    <!-- Estructura de la página -->
+
+    <nav class="barra-lateral close">
+      <header>
+        <div class="texto-imagen">
+          <span class="imagen">
+            <img src="img_logo/Cetis-img.png" alt="logo" class="img-1" />
+          </span>
+
+          <div class="text cabezero-text">
+            <span class="nombre"
+              >Buzón de denuncias <br />
+              Anónimas</span
+            >
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-barra">
+        <div class="menu">
+          <!-- ==== Menu-Buscadaor ==== -->
+
+          <li class="buscador-box">
+            <i class="bx bx-search icon"></i>
+            <input type="search" placeholder="Buscar..." />
+          </li>
+
+          <!-- ==== Menus-links ==== -->
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="index.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text">Inicio</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="Acerca_De.html">
+                <i class="bx bx-happy-alt icon"></i>
+                <span class="text">Acerca De</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="Ayuda.html">
+                <i class="bx bx-message-rounded-detail icon"></i>
+                <span class="text">Ayuda</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="Denunciar.html">
+                <i class="bx bx-error icon"></i>
+                <span class="text">Denunciar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="boton-contenido">
+          <!-- <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                            <span class="text">Salir</span>
+                    </a>
+                </li> -->
+
+          <li class="modo">
+            <div class="modo-nocturno">
+              <i class="bx bx bx-moon icon nocturno"></i>
+              <i class="bx bx bx-sun icon claro"></i>
+            </div>
+            <span class="modo-text text">Modo oscuro</span>
+
+            <div class="alternar-interruptor">
+              <span class="interruptor"> </span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home" id="section_home">
+      <div class="text_report_welcome">¡Hola!</div>
+
+      <section class="formulario">
+        <header class="titulo-form">Denuncia Anónima</header>
+        <p class="descripcion-texto">
+          Por favor llene los datos solicitados para poder brindarle el apoyo
+          adecuado, los campos marcados con (*) son obligatorios.
+        </p>
+
+        <form
+          action="https://formsubmit.co/vidalchan.mc@gmail.com"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <legend>Llene el formulario</legend>
+          <label for="name">Nombre(s):</label>
+          <input
+            type="text"
+            name="Nombre"
+            id="name"
+            placeholder="Ingresa tu nombre(s)"
+          />
+
+          <label for="last-name">Primer apellido:</label>
+          <input
+            type="text"
+            name="Primer&nbsp;apellido"
+            id="last-name"
+            placeholder="Ingresa tu primer apellido"
+          />
+
+          <label for="second-surname">Segundo apellido:</label>
+          <input
+            type="text"
+            name="Segundo&nbsp;apellido"
+            id="second-surname"
+            placeholder="Ingresa tu segundo apellido apellido"
+          />
+
+          <label for="email">Correo:*</label>
+          <input
+            type="email"
+            name="Correo"
+            placeholder="Dirección de correo electrónico"
+            required
+          />
+
+          <label for="Telephone">Télefono:</label>
+          <input
+            type="tel"
+            name="Número"
+            id="Telephone"
+            placeholder="Teléfono"
+            maxlength="10"
+          />
+
+          <label for="description_2"
+            >Nombre(s) o característica(s) del responsable:*</label
+          >
+          <div id="div_description-responsable">
+            <textarea
+              name="Descripción&nbsp;de&nbsp;los&nbsp;hechos"
+              id="description_2"
+              cols=""
+              rows=""
+              placeholder=""
+              maxlength="200"
+              class="text-area-2"
+              required
+            ></textarea>
+          </div>
+
+          <label for="description_3">Fecha de los hechos:*</label>
+          <div id="div_description-responsable">
+            <input
+              type="date"
+              name="Número"
+              id="Telephone"
+              placeholder="Teléfono"
+              maxlength="10"
+              required
+            />
+          </div>
+
+          <label for="description">Hechos:*</label>
+          <div id="div_description">
+            <textarea
+              name="Descripción&nbsp;de&nbsp;los&nbsp;hechos"
+              id="description"
+              cols=""
+              rows=""
+              placeholder=""
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+
+          <label for="description">Descripción de los hechos:*</label>
+          <div id="div_description">
+            <textarea
+              name="Descripción&nbsp;de&nbsp;los&nbsp;hechos"
+              id="description"
+              cols=""
+              rows=""
+              placeholder=""
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+
+          <div class="texto-titulo-popup">
+            <p for="" class="descripcion-texto-2">
+              Archivo <b>(peso máximo <b class="MB">15MB</b>)</b>
+            </p>
+          </div>
+
+          <!--==== PREVIEW ====-->
+
+          <div class="container">
+            <div class="wrapper">
+              <div class="image-p">
+                <img placeholder="" alt="" id="img-2" />
+              </div>
+              <div class="content">
+                <div class="icon">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <div class="text-1">
+                  Sin archivo <br />
+                  seleccionado
+                </div>
+              </div>
+
+              <div id="cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="file-name">Nombre del archivo</div>
+            </div>
+          </div>
+
+          <!--==== FIN PREVIEW ====-->
+
+          <!-- ==== BOTÓN DE AGREGAR ARCHIVO==== -->
+
+          <div id="div_file">
+            <p id="texto_file">Agregar arhivo</p>
+            <input
+              name="attachment"
+              accept="image/png, image/jpeg"
+              class="btn_enviar"
+              placeholder=""
+              class="file-select"
+              onclick="defaultBtnActive()"
+              id="custom-btn"
+            />
+            <input
+              id="default-btn"
+              type="file"
+              name="attachment"
+              accept="image/png, image/jpeg"
+              hidden
+            />
+          </div>
+
+          <!-- ==== FIN BOTÓN DE AGREGAR ARCHIVO==== -->
+
+          <button type="submit" class="btn">ENVIAR</button>
+
+          <!--==== NUEVO ====-->
+
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Gracias por hacer su denuncia, haremos un seguimiento de su caso lo más pronto posible."
+          />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/Denunciar-.html"
+          />
+        </form>
+      </section>
+
+      <footer class="footer_report">
+        <p>&nbsp;</p>
+      </footer>
+    </section>
+
+
+      <!--==== MODAL ====-->
+
+      <section>
+        <div id="welcome-modal" class="popup-2">
+          <div class="container_modal_form">
+            <img src="img/405.png" alt="alerta" />
+            <h2>ATENCIÓN</h2>
+            <p>
+              Estimado estudiante, antes de usar nuestro buzón de denuncias
+              anónimas le recomendamos leer en la sección de
+              <a href="Ayuda.html">Ayuda</a> como rellenar los datos de manera
+              correcta y que datos son necesarios para dar un correcto
+              seguimiento de su caso.
+            </p>
+            <a href="#">
+              <button onclick="hideModal()" class="btn-2">Cerrar</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+    <script src="javascript/soport_data.js"></script>
+    <script src="javascript/modal_hidden.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/preview.js"></script>
+  </body>
+</html>

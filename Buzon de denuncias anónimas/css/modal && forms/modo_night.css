@@ -1,0 +1,142 @@
+/* === SECCIÓN INICIO === */
+body.dark section.container-inicio {
+  background-color: #242526;
+  color: var(--color-texto);
+}
+
+body.dark h2.h2-001 {
+  color: var(--color-texto);
+}
+body.dark #txtsaludo {
+  color: var(--color-texto);
+}
+body.dark .hr-two {
+  background-color: var(--color-texto);
+}
+
+body.dark section.container-inicio form {
+  background-color: #242526;
+  color: var(--color-texto);
+}
+body.dark section.container-inicio form h3 {
+  color: var(--color-texto);
+}
+body.dark div.formulario_01 {
+  background-color: #242526;
+}
+body.dark section.container-inicio form input {
+  background-color: rgba(255, 255, 255, 0.797);
+}
+
+body.dark section.container-inicio form textarea {
+  background-color: rgba(255, 255, 255, 0.797);
+}
+
+body.dark .form-container input[type="submit"] {
+  color: black;
+  background-color: #fffffffb;
+  font-weight: 500;
+}
+body.dark footer {
+  background-color: #242526;
+}
+
+body.dark footer span.footer_index {
+  background-color: #242526;
+}
+
+/* === SECCIÓN ACERCA DE === */
+
+body.dark section.container-acerca {
+  background-color: #242526;
+  color: var(--color-texto);
+}
+
+body.dark span.footer_acerca_de {
+  background-color: #242526;
+  color: var(--color-texto);
+}
+
+body.dark span.footer_acerca_de svg:hover {
+  color: white;
+}
+
+/* === SECCIÓN AYUDA === */
+
+body.dark section.container-ayuda {
+  background-color: #242526;
+  color: var(--color-texto);
+}
+
+body.dark h3.h3-title {
+  color: var(--color-texto);
+}
+
+body.dark div.denuncia-here a {
+  background-color: rgba(42, 131, 131, 0.549);
+}
+
+body.dark .footer_help {
+  opacity: 0;
+}
+
+/* === SECCIÓN FORM  === */
+
+body.dark section.formulario {
+  background-color: #242526;
+  color: var(--color-texto);
+}
+
+body.dark section.formulario label,
+body.dark section.formulario legend,
+body.dark section.formulario header.titulo-form,
+body.dark .text_report_welcome,
+body.dark p.descripcion-texto-2 {
+  color: var(--color-texto);
+}
+
+body.dark b.MB {
+  color: #000;
+}
+
+body.dark section.formulario form textarea {
+  background-color: rgba(255, 255, 255, 0.797);
+}
+
+body.dark section.formulario form input {
+  background-color: rgba(255, 255, 255, 0.797);
+}
+
+body.dark div#div_file {
+  background-color: #1657adc6;
+  font-weight: 500;
+  box-shadow: none;
+}
+
+body.dark .formulario form button[type="submit"] {
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: none;
+    font-weight: 700;
+}
+
+body.dark .footer_report {
+  opacity: 0;
+}
+
+/* === MODAL  === */
+
+body.dark div#welcome-modal {
+    background-color: #242526;
+    color: var(--color-texto);
+}
+
+body.dark div#welcome-modal a {
+    color: rgb(30, 255, 180);
+}
+
+
+@media screen and (min-width: 1024px) {
+  body.dark .form-container input[type="submit"] {
+    font-weight: 600;
+  }
+}

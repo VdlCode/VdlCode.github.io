@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buzón de denuncias</title>
+
+    <!--==== ICONOS ====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!--==== CSS RESPONSIVE ====-->
+
+    <!-- === Global CSS === -->
+    <link rel="stylesheet" href="css/modal && forms/scrollBar.css" />
+    <link rel="stylesheet" href="css/modal && forms/modo_night.css">
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/global.css"
+      media="screen and (max-width: 479px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/movil.css"
+      media="screen and (min-width: 480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/tablest.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/responsive plataforms/desktop.css"
+      media="screen and (min-width: 1024px)"
+    />
+  </head>
+  <body onload="mostrarSaludo()">
+    <!--==== Estructura de la página ====-->
+
+    <nav class="barra-lateral close">
+      <header>
+        <div class="texto-imagen">
+          <span class="imagen">
+            <img src="img_logo/Cetis-img.png" alt="logo" class="img-1" />
+          </span>
+
+          <div class="text cabezero-text">
+            <span class="nombre"
+              >Buzón de denuncias <br />
+              Anónimas</span
+            >
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-barra">
+        <div class="menu">
+          <!--==== Menu-Buscadaor ====-->
+
+          <li class="buscador-box">
+            <i class="bx bx-search icon"></i>
+            <input type="search" placeholder="Buscar..." />
+          </li>
+
+          <!--==== Menus-links ====-->
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="index.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text">Inicio</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="Acerca_De.html">
+                <i class="bx bx-happy-alt icon"></i>
+                <span class="text">Acerca De</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="Ayuda.html">
+                <i class="bx bx-message-rounded-detail icon"></i>
+                <span class="text">Ayuda</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="Denunciar.html">
+                <i class="bx bx-message-rounded-error icon"></i>
+                <span class="text">Denunciar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="boton-contenido">
+          <!-- <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                            <span class="text">Salir</span>
+                    </a>
+                </li> -->
+
+          <li class="modo">
+            <div class="modo-nocturno">
+              <i class="bx bx bx-moon icon nocturno"></i>
+              <i class="bx bx bx-sun icon claro"></i>
+            </div>
+            <span class="modo-text text">Modo oscuro</span>
+
+            <div class="alternar-interruptor">
+              <span class="interruptor"> </span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!--==== Función saludo ====-->
+
+    <section class="home">
+      <div class="text">
+        <div id="saludo">
+          <div id="txtsaludo">&nbsp;</div>
+        </div>
+      </div>
+
+      <!-- ============= -->
+      <section class="container-inicio">
+        <h2 class="titulo-3">¡Bienvenido!</h2>
+        <!-- <p class="im">hoaa</p> -->
+
+        <div class="slider-text">
+          <h2 class="h2-001">Somos</h2>
+          <div class="saludos">
+            <ul class="slider-ul">
+              <li class="slider-li">DGETI</li>
+              <li class="slider-li">CHIDOS</li>
+              <li class="slider-li">GRANDES</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="hr-one" />
+
+        <div class="home_1">
+          <h3 class="title-help-1">
+            ¿Qué es un buzón de quejas y denuncias anónimas?
+          </h3>
+          <p class="textos">
+            El buzón de quejas y denuncias anónimas es una herramienta que
+            ofrece la oportunidad a los estudiantes de nivel superior que
+            estudien en instituciones DGETI de transmitir sus inconformidades o
+            experiencias negativas que dieron lugar en sus instituciones
+            educativas, esto con el fin de reducir de manera considerable los
+            casos de abusos, acoso y quejas.
+          </p>
+
+          <h3 class="title-help-1">¿Por qué es importante denunciar?</h3>
+          <p class="textos">
+            Hay varias razones, una de ellas es que al denunciar las autoridades
+            correspondientes podrán tomar acciones y podrán iniciar un proceso
+            evaluando el comportamiento tanto de la víctima como del victimario
+            para posteriormente determinar si la víctima necesita ayuda
+            (psicológica, física, mental o social) y en consecuencia actuar para
+            sancionar al acusado por lo cometido anteriormente.
+          </p>
+
+          <h3 class="title-help-1">
+            ¿Cómo puede contribuir la denuncia anónima a mejorar la calidad de
+            la educación y el ambiente escolar?
+          </h3>
+          <p class="textos">
+            La denuncia anónima puede contribuir a mejorar la calidad de la
+            educación y el ambiente escolar al permitir la identificación y
+            abordaje de situaciones que afectan negativamente a los estudiantes
+            y al ambiente educativo. Al recibir denuncias anónimas, las
+            autoridades educativas pueden conocer situaciones que quizás no se
+            habrían conocido de otra manera y tomar medidas para prevenir o
+            abordar las problemáticas identificadas. Además, la denuncia anónima
+            puede generar un mayor compromiso de las autoridades educativas y de
+            los estudiantes para mejorar la calidad del ambiente escolar y
+            prevenir el acoso y abuso.
+          </p>
+          <br />
+          <p class="textos-sub">
+            Según la gráfica 1, Se observa que sólo el 24.5% de los estudiantes
+            sienten respaldo por parte de las autoridades del plantel en caso de
+            denunciar una situación de violencia escolar, lo que sugiere que aún
+            hay un largo camino por recorrer para que los estudiantes se sientan
+            seguros al realizar una denuncia.
+          </p>
+          <div class="img-graph">
+            <p class="img-text">Gráfica 1</p>
+            <img src="img/grafica1.png" alt="" />
+          </div>
+
+          <p class="textos-sub">
+            Por otro lado, la gráfica 2 muestra que sólo el 34.9% de los
+            estudiantes se sienten siempre seguros en la escuela, lo que
+            significa que hay una proporción significativa de estudiantes que no
+            se sienten seguros en su entorno educativo. En este sentido, la
+            denuncia anónima puede contribuir a mejorar la calidad del ambiente
+            escolar y la seguridad de los estudiantes, ya que permite
+            identificar y abordar situaciones que afectan negativamente a los
+            estudiantes y al ambiente educativo.
+          </p>
+          <div class="img-graph">
+            <p class="img-text">Gráfica 2</p>
+            <img src="img/grafica2.png" alt="" />
+          </div>
+          <h3 class="title-help-1">
+            ¿Qué responsabilidades tienen los estudiantes y el personal
+            educativo en la prevención y el abordaje del acoso y abuso en las
+            instituciones educativas?
+          </h3>
+          <p class="textos">
+            Tanto los estudiantes como el personal educativo tienen
+            responsabilidades importantes en la prevención y el abordaje del
+            acoso y abuso en las instituciones educativas. En primer lugar, es
+            responsabilidad de todos los miembros de la comunidad educativa
+            fomentar un ambiente de respeto y tolerancia, y prevenir cualquier
+            forma de acoso o abuso. Además, es importante que los estudiantes se
+            sientan seguros para denunciar cualquier situación de acoso o abuso
+            que experimenten o presencien. Por su parte, el personal educativo
+            debe estar capacitado para identificar y abordar el acoso y abuso, y
+            contar con medidas disciplinarias claras para los perpetradores. En
+            definitiva, la prevención y el abordaje del acoso y abuso en las
+            instituciones educativas es una tarea de toda la comunidad educativa
+            y requiere del compromiso y la colaboración de todos los miembros de
+            la comunidad.
+          </p>
+
+          <h3 class="title-help-1">
+            ¿Has sido víctima de violencia o has sido víctima de acoso en la
+            escuela?
+          </h3>
+          <p class="textos">
+            Si has sido víctima de acoso o violencia en la escuela, es
+            importante que lo denuncies a las autoridades correspondientes.
+            Puedes hacerlo de forma anónima a través de nuestro buzón de quejas
+            y denuncias anónimas, y así recibir el apoyo necesario para resolver
+            el problema. Según estudios recientes, una gran cantidad de
+            estudiantes han reportado haber sido víctimas de algún tipo de
+            violencia en la escuela, lo que hace evidente la necesidad de tomar
+            medidas para prevenir y abordar estas situaciones. Además, denunciar
+            también puede ayudar a otras personas que puedan estar pasando por
+            lo mismo, ya que se puede generar una cultura de prevención y
+            cuidado en la escuela.
+          </p>
+          <br />
+          <p class="textos">
+            Es importante mencionar que, si has sido víctima de acoso o
+            violencia en la escuela, no es tu culpa y no estás sola. Hay
+            profesionales y organizaciones que pueden ayudarte a superar las
+            consecuencias de estas situaciones y a recuperar tu bienestar
+            emocional y psicológico. No dudes en buscar ayuda y denunciar lo
+            ocurrido, ya que esto puede marcar una gran diferencia en tu vida y
+            en la de quienes te rodean.
+          </p>
+
+          <h3 class="title-help-1">¿Qué ventajas ofrecemos?</h3>
+          <p class="textos">
+            Puedes hacer una denuncia oralmente, escrita o a través de un canal.
+            Es por eso que nosotros podemos ofrecerte este servicio que te
+            permite a ti como estudiante otorgarte esa facilidad de mandar una
+            denuncia o queja sin que tengas que exhibir tu identidad al público;
+            cuidando así aspectos sociales, emocionales, físicos.
+          </p>
+        </div>
+
+        <hr class="hr-two" />
+        <div class="formulario_01">
+          <form action="">
+            <h3>¿Cómo podemos mejorar? Déjanos saber tus sugerencias</h3>
+            <p>
+              Tu dirreción de correo electrónico no será publicada. Los campos
+              obligatorios están marcados con *
+            </p>
+
+            <div class="form-container">
+              <div class="form-textarea">
+                <label for="">Comentario*</label><br />
+                <textarea
+                  name=""
+                  id="div_description-form"
+                  cols="30"
+                  rows="10"
+                  maxlength="500"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="name-form">Nombre*</label><br />
+                <input type="text" class="form-input" />
+              </div>
+
+              <div class="form-group">
+                <label for="Email-form">Correo electrónico*</label><br />
+                <input type="email" class="form-input" />
+              </div>
+
+              <div class="form-group">
+                <label for="category-form">Categoría:</label><br />
+                <select id="category" name="category" class="form-input">
+                  <option value="selecciona" disabled selected>
+                    Selecciona una categoría
+                  </option>
+                  <option value="sugerencia">Sugerencia</option>
+                  <option value="problema">Problema</option>
+                  <option value="comentario">Comentario</option>
+                </select>
+              </div>
+
+              <input
+                type="submit"
+                name=""
+                id=""
+                value="publicar el comentario"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer_index_0">
+        <span class="footer_index">
+          <a href="">Legal |</a>
+          <a href="">Política de Privacidad |</a>
+          <a href="">Cookies</a>
+        </span>
+      </footer>
+    </section>
+
+
+    <script src="javascript/time_data.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
