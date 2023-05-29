@@ -6,7 +6,8 @@
   }
 
   // Obtenemos los elementos que queremos darle opacidad
-  var homeSection = document.querySelector("#section_home");
+  var homeSection = document.querySelector("section.home");
+
 
   // Oculta la ventana emergente
   function hideModal() {
