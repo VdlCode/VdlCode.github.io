@@ -196,11 +196,6 @@
   body {
     overflow: hidden;
   }
-  section.home {
-    opacity: 0.6;
-    pointer-events: none;
-
-  }
   #welcome-modal {
     display: block; /*! Ocultamos la ventana emergente */
     z-index: 999;
