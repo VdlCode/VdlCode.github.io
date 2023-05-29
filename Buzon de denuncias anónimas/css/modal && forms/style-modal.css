@@ -200,7 +200,10 @@
     display: block; /*! Ocultamos la ventana emergente */
     z-index: 999;
   }
-  
+   section.home {
+    opacity: 0.6;
+    pointer-events: none;
+  }
   .container_modal_form {
     margin-top: initial;
     border-top: 0;
